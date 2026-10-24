@@ -1,10 +1,119 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-    <h1>Renault</h1>
-</body>
-</html>
+{% extends 'base.html' %}
+{% block content %}
+
+<!-- ================================================= -->
+<!--                     RENAULT                      -->
+<!-- ================================================= -->
+
+<section class="mb-5">
+
+    <h2 class="section-title fw-bold mb-4">
+
+        Renault
+
+    </h2>
+
+
+    <div class="row g-4">
+
+
+        <div class="col-md-4">
+
+            <div class="card car-card h-100 border-0 shadow-sm">
+
+                <img
+                        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Renault-Megane.jpg"
+                        class="card-img-top"
+                        alt="Renault Megane">
+
+
+                <div class="card-body">
+
+                    <h5 class="fw-bold">
+
+                        Megane
+
+                    </h5>
+
+                    <p class="text-muted">
+
+                        Комфортний європейський
+                        автомобіль для міста.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-md-4">
+
+            <div class="card car-card h-100 border-0 shadow-sm">
+
+                <img
+                        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Renault_Duster.JPG"
+                        class="card-img-top"
+                        alt="Renault Duster">
+
+
+                <div class="card-body">
+
+                    <h5 class="fw-bold">
+
+                        Duster
+
+                    </h5>
+
+                    <p class="text-muted">
+
+                        Практичний автомобіль
+                        для міських та заміських доріг.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="col-md-4">
+
+            <div class="card car-card h-100 border-0 shadow-sm">
+
+                <img
+                        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Renault-Clio.jpg"
+                        class="card-img-top"
+                        alt="Renault Clio">
+
+
+                <div class="card-body">
+
+                    <h5 class="fw-bold">
+
+                        Clio
+
+                    </h5>
+
+                    <p class="text-muted">
+
+                        Компактний автомобіль
+                        для міського використання.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}
