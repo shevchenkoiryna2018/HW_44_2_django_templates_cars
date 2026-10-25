@@ -1,225 +1,228 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<!-- ================================================= -->
-<!--                         HERO                      -->
-<!-- ================================================= -->
+<section>
 
-<section class="hero shadow-sm mb-5">
+    <!-- HERO -->
 
-    <div class="row g-0 align-items-center">
+    <div class="hero shadow mb-5">
 
-        <div class="col-lg-6 p-5">
+        <div class="row align-items-center">
 
-            <div class="text-uppercase small text-secondary mb-2">
+            <div class="col-md-6 p-5">
 
-                Auto World
+                <p class="text-uppercase text-secondary fw-bold mb-2">
+                    Auto World
+                </p>
+
+                <h1 class="display-5 fw-bold">
+                    Світ автомобілів
+                </h1>
+
+                <p class="lead mt-3">
+                    Познайомтеся з популярними автомобільними
+                    брендами та їхніми відомими моделями.
+                </p>
+
+                <p>
+                    Toyota, Honda та Renault —
+                    три бренди, які поєднують технології,
+                    комфорт і сучасний дизайн.
+                </p>
 
             </div>
 
+            <div class="col-md-6">
 
-            <h1 class="display-5 fw-bold">
+                <img
+                    src="https://tmna.aemassets.toyota.com/is/image/toyota/toyota/jellies/max/2026/camry/le/2559/3u5/1.png?fmt=png-alpha&qlt=90&wid=930"
+                    class="hero-image"
+                    alt="Toyota Camry"
+                >
 
-                Світ сучасних автомобілів
+            </div>
 
-            </h1>
+        </div>
 
-
-            <p class="lead text-light opacity-75 mt-3">
-
-                Toyota, Honda та Renault —
-                популярні автомобільні бренди,
-                які поєднують технології,
-                комфорт і практичність.
-
-            </p>
+    </div>
 
 
-            <a href="#brands"
-               class="btn btn-light btn-lg mt-3">
+    <!-- BRANDS -->
 
-                Переглянути бренди
+    <h2 class="section-title mb-4">
+        Автомобільні бренди
+    </h2>
+
+    <div class="row g-4 mb-5">
+
+        <!-- TOYOTA -->
+
+        <div class="col-md-4">
+
+            <a href="{% url 'cars:toyota' %}" class="text-decoration-none text-dark">
+
+                <div class="card brand-card shadow-sm h-100">
+
+                    <img
+                        src="https://tmna.aemassets.toyota.com/is/image/toyota/toyota/jellies/max/2026/rav4/le/4521/4v8/1.png?fmt=png-alpha&qlt=90&wid=930"
+                        alt="Toyota RAV4"
+                    >
+
+                    <div class="card-body text-center">
+
+                        <div class="brand-label">
+                            Японський бренд
+                        </div>
+
+                        <h3 class="fw-bold mt-2">
+                            Toyota
+                        </h3>
+
+                        <p class="text-muted">
+                            Надійність, технології та практичність.
+                        </p>
+
+                    </div>
+
+                </div>
 
             </a>
 
         </div>
 
 
-        <div class="col-lg-6">
+        <!-- HONDA -->
 
-            <img
-                    src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Toyota_RAV4_2026_20260202.jpg"
-                    class="hero-image"
-                    alt="Toyota RAV4">
+        <div class="col-md-4">
+
+            <a href="{% url 'cars:honda' %}" class="text-decoration-none text-dark">
+
+                <div class="card brand-card shadow-sm h-100">
+
+                    <img
+                        src="https://automobiles.honda.com/-/media/Honda-Automobiles/Vehicles/2026/civic-sedan/Full-Gallery-OP/Exterior/Thumb/2026-honda-civic-sedan-sport-touring-hybrid-rallye-red-front-01.jpg?hash=C8B1A71EC25D2A76068F6FB0E1A00664&mw=382&sc_lang=en"
+                        alt="Honda Civic"
+                    >
+
+                    <div class="card-body text-center">
+
+                        <div class="brand-label">
+                            Японський бренд
+                        </div>
+
+                        <h3 class="fw-bold mt-2">
+                            Honda
+                        </h3>
+
+                        <p class="text-muted">
+                            Динаміка, комфорт і сучасні рішення.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </a>
+
+        </div>
+
+
+        <!-- RENAULT -->
+
+        <div class="col-md-4">
+
+            <a href="{% url 'cars:renault' %}" class="text-decoration-none text-dark">
+
+                <div class="card brand-card shadow-sm h-100">
+
+                    <img
+                        src="https://media.renault.com/wp-content/uploads/2026/06/fc8fd0da3e20374491207a5ae9c600fe-m.jpg.webp"
+                        alt="Renault Megane E-Tech"
+                    >
+
+                    <div class="card-body text-center">
+
+                        <div class="brand-label">
+                            Французький бренд
+                        </div>
+
+                        <h3 class="fw-bold mt-2">
+                            Renault
+                        </h3>
+
+                        <p class="text-muted">
+                            Дизайн, інновації та електрифікація.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </a>
 
         </div>
 
     </div>
 
-</section>
+    <!-- FEATURES -->
 
-
-<!-- ================================================= -->
-<!--                       БРЕНДИ                     -->
-<!-- ================================================= -->
-
-<section id="brands"
-         class="mb-5">
-
-    <h2 class="section-title fw-bold mb-4">
-
-        Автомобільні бренди
-
+    <h2 class="section-title mb-4">
+        Особливості сучасних автомобілів
     </h2>
 
-
-    <div class="row g-4">
-
-
-        <!-- Toyota -->
+    <div class="row g-4 mb-5">
 
         <div class="col-md-4">
 
-            <div class="card brand-card car-card h-100 border-0 shadow-sm">
+            <div class="info-box shadow-sm p-4 h-100">
 
-                <img
-                        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Toyota_Camry.jpg"
-                        class="card-img-top"
-                        alt="Toyota Camry">
+                <h4 class="fw-bold">
+                    Технології
+                </h4>
 
-
-                <div class="card-body">
-
-                    <div class="brand-label">
-
-                        Японія
-
-                    </div>
-
-
-                    <h4 class="fw-bold mt-2">
-
-                        Toyota
-
-                    </h4>
-
-
-                    <p class="text-muted">
-
-                        Надійні автомобілі,
-                        популярні седани та SUV.
-
-                    </p>
-
-
-                    <a href="#"
-                       class="btn btn-dark">
-
-                        Toyota
-
-                    </a>
-
-                </div>
+                <p class="text-muted mb-0">
+                    Сучасні автомобілі отримують цифрові
+                    системи, асистенти водія та нові
+                    технологічні рішення.
+                </p>
 
             </div>
 
         </div>
 
 
-        <!-- Honda -->
-
         <div class="col-md-4">
 
-            <div class="card brand-card car-card h-100 border-0 shadow-sm">
+            <div class="info-box shadow-sm p-4 h-100">
 
-                <img
-                        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Honda-CR-V.jpg"
-                        class="card-img-top"
-                        alt="Honda CR-V">
+                <h4 class="fw-bold">
+                    Комфорт
+                </h4>
 
-
-                <div class="card-body">
-
-                    <div class="brand-label">
-
-                        Японія
-
-                    </div>
-
-
-                    <h4 class="fw-bold mt-2">
-
-                        Honda
-
-                    </h4>
-
-
-                    <p class="text-muted">
-
-                        Практичні автомобілі
-                        та спортивні моделі.
-
-                    </p>
-
-
-                    <a href="#"
-                       class="btn btn-dark">
-
-                        Honda
-
-                    </a>
-
-                </div>
+                <p class="text-muted mb-0">
+                    Комфортний салон, сучасні мультимедійні
+                    системи та продумані функції роблять
+                    поїздки приємнішими.
+                </p>
 
             </div>
 
         </div>
 
 
-        <!-- Renault -->
-
         <div class="col-md-4">
 
-            <div class="card brand-card car-card h-100 border-0 shadow-sm">
+            <div class="info-box shadow-sm p-4 h-100">
 
-                <img
-                        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Renault-Clio.jpg"
-                        class="card-img-top"
-                        alt="Renault Clio">
+                <h4 class="fw-bold">
+                    Енергія
+                </h4>
 
-
-                <div class="card-body">
-
-                    <div class="brand-label">
-
-                        Франція
-
-                    </div>
-
-
-                    <h4 class="fw-bold mt-2">
-
-                        Renault
-
-                    </h4>
-
-
-                    <p class="text-muted">
-
-                        Європейські автомобілі
-                        для міста та подорожей.
-
-                    </p>
-
-
-                    <a href="#"
-                       class="btn btn-dark">
-
-                        Renault
-
-                    </a>
-
-                </div>
+                <p class="text-muted mb-0">
+                    Гібридні та електричні технології
+                    поступово стають важливою частиною
+                    автомобільного світу.
+                </p>
 
             </div>
 
@@ -227,276 +230,19 @@
 
     </div>
 
-</section>
 
+    <!-- CTA -->
 
-<!-- ================================================= -->
-<!--                  ПОПУЛЯРНІ МОДЕЛІ                -->
-<!-- ================================================= -->
+    <div class="bg-dark text-white rounded-4 p-5 text-center mb-4">
 
-<section class="mb-5">
+        <h2 class="fw-bold">
+            Оберіть свій бренд
+        </h2>
 
-    <h2 class="section-title fw-bold mb-4">
-
-        Популярні моделі
-
-    </h2>
-
-
-    <div class="row g-4">
-
-
-        <!-- Toyota Camry -->
-
-        <div class="col-md-6">
-
-            <div class="card car-card h-100 border-0 shadow-sm">
-
-                <img
-                        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Toyota_Camry.jpg"
-                        class="card-img-top"
-                        alt="Toyota Camry">
-
-
-                <div class="card-body">
-
-                    <small class="text-muted">
-
-                        Toyota
-
-                    </small>
-
-
-                    <h4 class="fw-bold">
-
-                        Camry
-
-                    </h4>
-
-
-                    <p class="text-muted">
-
-                        Комфортний седан,
-                        орієнтований на щоденні
-                        поїздки та далекі подорожі.
-
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- Toyota RAV4 -->
-
-        <div class="col-md-6">
-
-            <div class="card car-card h-100 border-0 shadow-sm">
-
-                <img
-                        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Toyota_RAV_4.jpg"
-                        class="card-img-top"
-                        alt="Toyota RAV4">
-
-
-                <div class="card-body">
-
-                    <small class="text-muted">
-
-                        Toyota
-
-                    </small>
-
-
-                    <h4 class="fw-bold">
-
-                        RAV4
-
-                    </h4>
-
-
-                    <p class="text-muted">
-
-                        Практичний кросовер
-                        для міста та подорожей.
-
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- Honda Civic -->
-
-        <div class="col-md-6">
-
-            <div class="card car-card h-100 border-0 shadow-sm">
-
-                <img
-                        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Honda-civic-sedan.jpg"
-                        class="card-img-top"
-                        alt="Honda Civic">
-
-
-                <div class="card-body">
-
-                    <small class="text-muted">
-
-                        Honda
-
-                    </small>
-
-
-                    <h4 class="fw-bold">
-
-                        Civic
-
-                    </h4>
-
-
-                    <p class="text-muted">
-
-                        Популярний компактний
-                        автомобіль із динамічним характером.
-
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- Honda CR-V -->
-
-        <div class="col-md-6">
-
-            <div class="card car-card h-100 border-0 shadow-sm">
-
-                <img
-                        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Honda-CR-V.jpg"
-                        class="card-img-top"
-                        alt="Honda CR-V">
-
-
-                <div class="card-body">
-
-                    <small class="text-muted">
-
-                        Honda
-
-                    </small>
-
-
-                    <h4 class="fw-bold">
-
-                        CR-V
-
-                    </h4>
-
-
-                    <p class="text-muted">
-
-                        Сучасний кросовер
-                        із практичним салоном.
-
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- Renault Megane -->
-
-        <div class="col-md-6">
-
-            <div class="card car-card h-100 border-0 shadow-sm">
-
-                <img
-                        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Renault-Megane.jpg"
-                        class="card-img-top"
-                        alt="Renault Megane">
-
-
-                <div class="card-body">
-
-                    <small class="text-muted">
-
-                        Renault
-
-                    </small>
-
-
-                    <h4 class="fw-bold">
-
-                        Megane
-
-                    </h4>
-
-
-                    <p class="text-muted">
-
-                        Європейський автомобіль
-                        із комфортним характером.
-
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- Renault Duster -->
-
-        <div class="col-md-6">
-
-            <div class="card car-card h-100 border-0 shadow-sm">
-
-                <img
-                        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Renault_Duster.JPG"
-                        class="card-img-top"
-                        alt="Renault Duster">
-
-
-                <div class="card-body">
-
-                    <small class="text-muted">
-
-                        Renault
-
-                    </small>
-
-
-                    <h4 class="fw-bold">
-
-                        Duster
-
-                    </h4>
-
-
-                    <p class="text-muted">
-
-                        Практичний SUV
-                        для міських та заміських поїздок.
-
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
+        <p class="lead mb-0">
+            Перейдіть до потрібного розділу та перегляньте
+            популярні моделі автомобілів.
+        </p>
 
     </div>
 

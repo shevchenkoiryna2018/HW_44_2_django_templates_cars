@@ -1,45 +1,62 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<!-- ================================================= -->
-<!--                     RENAULT                      -->
-<!-- ================================================= -->
+<!-- ========================================================= -->
+<!--                     СТОРІНКА RENAULT                     -->
+<!-- ========================================================= -->
 
-<section class="mb-5">
+<section class="mt-5">
 
-    <h2 class="section-title fw-bold mb-4">
+    <div class="brand-header shadow-sm">
 
-        Renault
+        <div class="brand-label">
+            Французький автомобільний бренд
+        </div>
 
+        <div class="brand-logo">
+            Renault
+        </div>
+
+        <p class="lead text-muted mb-0">
+            Renault поєднує французький дизайн,
+            технології та сучасні силові установки.
+        </p>
+
+    </div>
+
+
+    <h2 class="section-title mb-4">
+        Популярні моделі Renault
     </h2>
 
 
-    <div class="row g-4">
+    <div class="row g-4 mb-5">
 
+        <!-- MEGANE -->
 
         <div class="col-md-4">
 
-            <div class="card car-card h-100 border-0 shadow-sm">
+            <div class="card car-card shadow-sm h-100">
 
                 <img
-                        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Renault-Megane.jpg"
-                        class="card-img-top"
-                        alt="Renault Megane">
-
+                    src="https://media.renault.com/wp-content/uploads/2026/06/fc8fd0da3e20374491207a5ae9c600fe-m.jpg.webp"
+                    alt="Renault Megane E-Tech"
+                >
 
                 <div class="card-body">
 
-                    <h5 class="fw-bold">
+                    <div class="brand-label">
+                        Renault
+                    </div>
 
+                    <h4 class="fw-bold mt-2">
                         Megane
-
-                    </h5>
+                    </h4>
 
                     <p class="text-muted">
-
-                        Комфортний європейський
-                        автомобіль для міста.
-
+                        Сучасний автомобіль Renault
+                        із виразним дизайном та
+                        електричними технологіями.
                     </p>
 
                 </div>
@@ -49,29 +66,30 @@
         </div>
 
 
+        <!-- DUSTER -->
+
         <div class="col-md-4">
 
-            <div class="card car-card h-100 border-0 shadow-sm">
+            <div class="card car-card shadow-sm h-100">
 
                 <img
-                        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Renault_Duster.JPG"
-                        class="card-img-top"
-                        alt="Renault Duster">
-
+                    src="https://media.renault.com/wp-content/uploads/2026/01/c71593840add0a9880db887c425b0108-m.jpg.webp"
+                    alt="Renault Duster"
+                >
 
                 <div class="card-body">
 
-                    <h5 class="fw-bold">
+                    <div class="brand-label">
+                        Renault
+                    </div>
 
+                    <h4 class="fw-bold mt-2">
                         Duster
-
-                    </h5>
+                    </h4>
 
                     <p class="text-muted">
-
-                        Практичний автомобіль
-                        для міських та заміських доріг.
-
+                        Практичний SUV з акцентом
+                        на універсальність та пригоди.
                     </p>
 
                 </div>
@@ -80,30 +98,31 @@
 
         </div>
 
+
+        <!-- CLIO -->
 
         <div class="col-md-4">
 
-            <div class="card car-card h-100 border-0 shadow-sm">
+            <div class="card car-card shadow-sm h-100">
 
                 <img
-                        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Renault-Clio.jpg"
-                        class="card-img-top"
-                        alt="Renault Clio">
-
+                    src="https://media.renault.com/wp-content/uploads/2024/01/48e39916e995dac9b24575b9a43913c5-m.jpg.webp"
+                    alt="Renault Clio"
+                >
 
                 <div class="card-body">
 
-                    <h5 class="fw-bold">
+                    <div class="brand-label">
+                        Renault
+                    </div>
 
+                    <h4 class="fw-bold mt-2">
                         Clio
-
-                    </h5>
+                    </h4>
 
                     <p class="text-muted">
-
-                        Компактний автомобіль
-                        для міського використання.
-
+                        Компактний міський автомобіль
+                        із сучасним дизайном.
                     </p>
 
                 </div>
@@ -111,6 +130,24 @@
             </div>
 
         </div>
+
+    </div>
+
+
+    <!-- INFORMATION -->
+
+    <div class="info-box shadow-sm p-4 mb-4">
+
+        <h3 class="fw-bold">
+            Чому Renault?
+        </h3>
+
+        <p class="mb-0 text-muted">
+            Renault відомий своїм оригінальним дизайном,
+            практичними моделями та розвитком
+            електричних технологій. Бренд пропонує
+            автомобілі для міста, подорожей та активного життя.
+        </p>
 
     </div>
 

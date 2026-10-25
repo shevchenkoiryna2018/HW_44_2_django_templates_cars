@@ -1,45 +1,61 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<!-- ================================================= -->
-<!--                      HONDA                       -->
-<!-- ================================================= -->
+<!-- ========================================================= -->
+<!--                      СТОРІНКА HONDA                      -->
+<!-- ========================================================= -->
 
-<section class="mb-5">
+<section class="mt-5">
 
-    <h2 class="section-title fw-bold mb-4">
+    <div class="brand-header shadow-sm">
 
-        Honda
+        <div class="brand-label">
+            Японський автомобільний бренд
+        </div>
 
+        <div class="brand-logo">
+            Honda
+        </div>
+
+        <p class="lead text-muted mb-0">
+            Honda поєднує динамічний дизайн,
+            технології та комфорт.
+        </p>
+
+    </div>
+
+
+    <h2 class="section-title mb-4">
+        Популярні моделі Honda
     </h2>
 
 
-    <div class="row g-4">
+    <div class="row g-4 mb-5">
 
+        <!-- CIVIC -->
 
         <div class="col-md-4">
 
-            <div class="card car-card h-100 border-0 shadow-sm">
+            <div class="card car-card shadow-sm h-100">
 
                 <img
-                        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Honda-civic-sedan.jpg"
-                        class="card-img-top"
-                        alt="Honda Civic">
-
+                    src="https://automobiles.honda.com/-/media/Honda-Automobiles/Vehicles/2026/civic-sedan/Full-Gallery-OP/Exterior/Thumb/2026-honda-civic-sedan-sport-touring-hybrid-rallye-red-front-01.jpg?hash=C8B1A71EC25D2A76068F6FB0E1A00664&mw=382&sc_lang=en"
+                    alt="Honda Civic"
+                >
 
                 <div class="card-body">
 
-                    <h5 class="fw-bold">
+                    <div class="brand-label">
+                        Honda
+                    </div>
 
+                    <h4 class="fw-bold mt-2">
                         Civic
-
-                    </h5>
+                    </h4>
 
                     <p class="text-muted">
-
-                        Один із найвідоміших
-                        компактних автомобілів Honda.
-
+                        Популярний компактний автомобіль
+                        зі спортивним дизайном.
                     </p>
 
                 </div>
@@ -49,29 +65,30 @@
         </div>
 
 
+        <!-- CR-V -->
+
         <div class="col-md-4">
 
-            <div class="card car-card h-100 border-0 shadow-sm">
+            <div class="card car-card shadow-sm h-100">
 
                 <img
-                        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Honda-CR-V.jpg"
-                        class="card-img-top"
-                        alt="Honda CR-V">
-
+                    src="https://honda-kiev.com.ua/uploads/media/dc_site/0082/40/f6dfa3b78f3cb0e933fcc6bbde6c1ecc7c78b20a.jpg"
+                    alt="Honda CR-V"
+                >
 
                 <div class="card-body">
 
-                    <h5 class="fw-bold">
+                    <div class="brand-label">
+                        Honda
+                    </div>
 
+                    <h4 class="fw-bold mt-2">
                         CR-V
-
-                    </h5>
+                    </h4>
 
                     <p class="text-muted">
-
-                        Просторий кросовер
-                        для сім'ї та подорожей.
-
+                        Просторий SUV для міста,
+                        подорожей та активного життя.
                     </p>
 
                 </div>
@@ -80,30 +97,30 @@
 
         </div>
 
+        <!-- CIVIC TYPE R -->
 
         <div class="col-md-4">
 
-            <div class="card car-card h-100 border-0 shadow-sm">
+            <div class="card car-card shadow-sm h-100">
 
                 <img
-                        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Honda_Civic_Type_R.jpg"
-                        class="card-img-top"
-                        alt="Honda Civic Type R">
-
+                    src="https://automobiles.honda.com/-/media/Honda-Automobiles/Vehicles/2026/civic-type-r/Full-Gallery-OP/Exterior/Thumb/02-Honda-Civic-TypeR-gallery-exterior-Thumb.jpg?hash=B1CDBCF89234BF28EEA4EB2CB792BAB3&mw=767&sc_lang=en"
+                    alt="Honda Civic Type R"
+                >
 
                 <div class="card-body">
 
-                    <h5 class="fw-bold">
+                    <div class="brand-label">
+                        Honda
+                    </div>
 
+                    <h4 class="fw-bold mt-2">
                         Civic Type R
-
-                    </h5>
+                    </h4>
 
                     <p class="text-muted">
-
-                        Спортивна версія
-                        Honda Civic.
-
+                        Спортивна версія Civic
+                        з акцентом на динаміку.
                     </p>
 
                 </div>
@@ -111,6 +128,24 @@
             </div>
 
         </div>
+
+    </div>
+
+
+    <!-- INFORMATION -->
+
+    <div class="info-box shadow-sm p-4 mb-4">
+
+        <h3 class="fw-bold">
+            Чому Honda?
+        </h3>
+
+        <p class="mb-0 text-muted">
+            Honda відома поєднанням технологій,
+            комфорту та спортивного характеру.
+            Моделі бренду підходять як для щоденних
+            поїздок, так і для любителів динамічного водіння.
+        </p>
 
     </div>
 

@@ -1,45 +1,61 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<!-- ================================================= -->
-<!--                    TOYOTA                        -->
-<!-- ================================================= -->
+<!-- ========================================================= -->
+<!--                     СТОРІНКА TOYOTA                      -->
+<!-- ========================================================= -->
 
-<section class="mb-5">
+<section class="mt-5">
 
-    <h2 class="section-title fw-bold mb-4">
+    <div class="brand-header shadow-sm">
 
-        Toyota
+        <div class="brand-label">
+            Японський автомобільний бренд
+        </div>
 
+        <div class="brand-logo">
+            Toyota
+        </div>
+
+        <p class="lead text-muted mb-0">
+            Toyota відома надійністю, практичністю
+            та широким вибором автомобілів.
+        </p>
+
+    </div>
+
+
+    <h2 class="section-title mb-4">
+        Популярні моделі Toyota
     </h2>
 
 
-    <div class="row g-4">
+    <div class="row g-4 mb-5">
 
+        <!-- CAMRY -->
 
         <div class="col-md-4">
 
-            <div class="card car-card h-100 border-0 shadow-sm">
+            <div class="card car-card shadow-sm h-100">
 
                 <img
-                        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Toyota_Camry.jpg"
-                        class="card-img-top"
-                        alt="Toyota Camry">
-
+                    src="https://tmna.aemassets.toyota.com/is/image/toyota/toyota/jellies/max/2026/camry/le/2559/3u5/1.png?fmt=png-alpha&qlt=90&wid=930"
+                    alt="Toyota Camry"
+                >
 
                 <div class="card-body">
 
-                    <h5 class="fw-bold">
+                    <div class="brand-label">
+                        Toyota
+                    </div>
 
+                    <h4 class="fw-bold mt-2">
                         Camry
-
-                    </h5>
+                    </h4>
 
                     <p class="text-muted">
-
-                        Комфортний седан
-                        для щоденного використання.
-
+                        Сучасний седан із комфортним салоном
+                        та елегантним дизайном.
                     </p>
 
                 </div>
@@ -49,29 +65,30 @@
         </div>
 
 
+        <!-- RAV4 -->
+
         <div class="col-md-4">
 
-            <div class="card car-card h-100 border-0 shadow-sm">
+            <div class="card car-card shadow-sm h-100">
 
                 <img
-                        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Toyota_RAV_4.jpg"
-                        class="card-img-top"
-                        alt="Toyota RAV4">
-
+                    src="https://tmna.aemassets.toyota.com/is/image/toyota/toyota/jellies/max/2026/rav4/le/4521/4v8/1.png?fmt=png-alpha&qlt=90&wid=930"
+                    alt="Toyota RAV4"
+                >
 
                 <div class="card-body">
 
-                    <h5 class="fw-bold">
+                    <div class="brand-label">
+                        Toyota
+                    </div>
 
+                    <h4 class="fw-bold mt-2">
                         RAV4
-
-                    </h5>
+                    </h4>
 
                     <p class="text-muted">
-
-                        Популярний кросовер
-                        для міста та подорожей.
-
+                        Практичний SUV для міста,
+                        подорожей та активного відпочинку.
                     </p>
 
                 </div>
@@ -80,30 +97,32 @@
 
         </div>
 
+
+        <!-- PRIUS -->
 
         <div class="col-md-4">
 
-            <div class="card car-card h-100 border-0 shadow-sm">
+            <div class="card car-card shadow-sm h-100">
 
                 <img
-                        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Toyota_Prius.jpg"
-                        class="card-img-top"
-                        alt="Toyota Prius">
-
+                    src="https://tmna.aemassets.toyota.com/is/image/toyota/toyota/jellies/max/2026/prius/le/1223/3u5/2.png?fmt=webp-alpha&qlt=90&wid=930"
+                    alt="Toyota Prius"
+                >
 
                 <div class="card-body">
 
-                    <h5 class="fw-bold">
+                    <div class="brand-label">
+                        Toyota
+                    </div>
 
+                    <h4 class="fw-bold mt-2">
                         Prius
-
-                    </h5>
+                    </h4>
 
                     <p class="text-muted">
-
-                        Відомий гібридний
-                        автомобіль Toyota.
-
+                        Відомий автомобіль Toyota,
+                        орієнтований на ефективність
+                        та сучасні технології.
                     </p>
 
                 </div>
@@ -111,6 +130,24 @@
             </div>
 
         </div>
+
+    </div>
+
+
+    <!-- INFORMATION -->
+
+    <div class="info-box shadow-sm p-4 mb-4">
+
+        <h3 class="fw-bold">
+            Чому Toyota?
+        </h3>
+
+        <p class="mb-0 text-muted">
+            Toyota поєднує практичність, сучасні технології
+            та різноманіття моделей. У модельному ряді бренду
+            представлені седани, кросовери та автомобілі
+            з гібридними силовими установками.
+        </p>
 
     </div>
 
